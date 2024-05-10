@@ -41,8 +41,8 @@ dependencies = [
 euromod = "src.euromod.core:Model"
 
 [project.urls]
-GitHub = "https://github.com/euromod"
-Issues = "https://github.com/euromod/issues"
+GitHub = "https://github.com/iribelousova/JRC-EUROMOD-software-source-code/tree/master/Connectors/PythonIntegration"
+Issues = "https://github.com/iribelousova/JRC-EUROMOD-software-source-code/discussions"
 EUROMOD = "https://euromod-web.jrc.ec.europa.eu/"
 Download = "https://euromod-web.jrc.ec.europa.eu/download-euromod"
 Documentation = "https://euromod-web.jrc.ec.europa.eu/resources/model-documentation"
