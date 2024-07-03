@@ -1,2 +1,4 @@
-from test.test import test
+from test.main import simpleland
+
+__all__ = ("simpleland")
 

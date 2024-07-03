@@ -5,12 +5,29 @@ import sys
 MODEL_PATH = os.path.dirname(__file__)
 if MODEL_PATH not in sys.path:
     sys.path.insert(0, MODEL_PATH)
+del os, sys, MODEL_PATH
     
-from core import Model
+from core import Model,Country,Policy,System,ReferencePolicy, PolicyInSystem, FunctionInSystem, Parameter, ParameterInSystem, Function, Dataset, DatasetInSystem, Extension
 from info import Info
+from base import ExtensionSwitch
 
-with open(os.path.join(MODEL_PATH,'VERSION.txt')) as f:
-    __version__ = f.readlines()[0] 
+
+__all__ = ["Model",
+           "Country",
+           "System",
+           "Dataset",
+           "DatasetInSystem",
+           "Policy",
+           "PolicyInSystem",
+           "ReferencePolicy",
+           "Function",
+           "FunctionInSystem",
+           "Parameter",
+           "ParameterInSystem",
+           "Extension",
+           "ExtensionSwitch",
+           "__version__",
+           "__doc__"]
 
 # module level doc-string
 __doc__ = """
@@ -39,4 +56,13 @@ and national teams from the EU countries.
 ===========================================================================
 """
 
-del os, sys, MODEL_PATH
+# with open(os.path.join(MODEL_PATH,'VERSION.txt')) as f:
+#     __version__ = f.readlines()[0] 
+def _get_version() -> str:
+    from importlib.metadata import version
+
+    return version(__name__)
+
+
+__version__ = _get_version()
+

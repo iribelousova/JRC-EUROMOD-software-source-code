@@ -7,7 +7,7 @@ no-build-isolation = true
 
 [project]
 name = "euromod"
-dynamic = ["version"]
+version = "0.1.20a" 
 
 requires-python = ">=3.8"
 authors = [  
@@ -35,6 +35,7 @@ classifiers = [
 dependencies = [ 
   "pythonnet>=3.0.2",
   "pandas>=2.0.3",  
+  "platform_system=='Windows'",
             ]
             
 [project.scripts]
@@ -52,8 +53,6 @@ Euromod-Online = "https://euromod-web.jrc.ec.europa.eu/info-euromod-online"
 [tool.setuptools]
 include-package-data = true
 
-[tool.setuptools.dynamic]
-version = {file = ["src/euromod/VERSION.txt"]}
 
 [tool.setuptools.packages.find]
 namespaces = false
