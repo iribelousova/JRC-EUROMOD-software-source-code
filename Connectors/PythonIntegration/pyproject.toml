@@ -11,7 +11,7 @@ version = "0.1.20a"
 
 requires-python = ">=3.8"
 authors = [  
-    {name = "Irina Belousova", email = "irina.belousova@ec.europa.eu"},
+    {name = "Irina Belousova", email = "iri.belousova@gmail.com"},
     {name = "Hannes Serruys", email = "hannes.serruys@ec.europa.eu"},
     {name = "Kostas Manios", email = "kostas.manios@ec.europa.eu"},
         ]
@@ -21,7 +21,7 @@ maintainers = [
             ]
 description = "Run the microsimulation model EUROMOD. The latest model and software versions of EUROMOD are available at https://euromod-web.jrc.ec.europa.eu/download-euromod ."
 readme = "README.md"
-license = {file = "src/euromod/LICENSE.txt"}
+license = {file = "LICENSE.txt"}
 keywords = ["Euromod", "Microsimulation"]
 
 classifiers = [
@@ -33,17 +33,16 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
             ]
 dependencies = [ 
-  "pythonnet>=3.0.2",
-  "pandas>=2.0.3",  
-  "platform_system=='Windows'",
+  "pandas>=2.0.3 ; platform_system == 'Windows'", 
+  "pythonnet>=3.0.2", 
             ]
             
 [project.scripts]
-euromod = "src.euromod.core:Model"
+euromod = "euromod.euromod_cli:cli"
 
 [project.urls]
-GitHub = "https://github.com/iribelousova/JRC-EUROMOD-software-source-code/tree/master/Connectors/PythonIntegration"
-Issues = "https://github.com/iribelousova/JRC-EUROMOD-software-source-code/discussions"
+GitHub = "https://github.com/ec-jrc/JRC-EUROMOD-software-source-code/tree/master/Connectors/PythonIntegration"
+Issues = "https://github.com/ec-jrc/JRC-EUROMOD-software-source-code/tree/master/Connectors/PythonIntegration/discussions"
 EUROMOD = "https://euromod-web.jrc.ec.europa.eu/"
 Download = "https://euromod-web.jrc.ec.europa.eu/download-euromod"
 Documentation = "https://euromod-web.jrc.ec.europa.eu/resources/model-documentation"
