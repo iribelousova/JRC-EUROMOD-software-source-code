@@ -144,6 +144,7 @@ PolicyInSystem
 
 ## License
 
-EUROMOD is licensed under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license and the MIT license. See the
+&copy; Copyright 2024 European Commission. EUROMOD is licensed under the [EUPL, Version 1.2](https://joinup.ec.europa.eu/software/page/eupl). See the
+[documentation](https://euromod.readthedocs.io/en/latest/license.html) for details. See the
 [documentation](https://euromod.readthedocs.io/en/latest/license.html) for details.
 
